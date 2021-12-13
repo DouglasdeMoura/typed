@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --require esbuild-register src/index.ts"
+    "start": "node --require esbuild-register src/index.ts",
+    "start:nothrow": "node --require esbuild-register src/nothrow.ts"
   },
   "devDependencies": {
     "esbuild": "^0.14.3",
