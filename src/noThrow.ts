@@ -49,5 +49,8 @@ function typedFnObj_noThrow(param: MyObj): Either<InvalidObject, MyObj> {
   })
 }
 
-console.log(typedFnObj_noThrow(null))
-console.log(typedFnObj_noThrow({ a: 'a' }))
+const invalidInput = typedFnObj_noThrow(null)
+const validInput = typedFnObj_noThrow({ a: 'a' })
+
+console.log(invalidInput, invalidInput.isLeft(), invalidInput.isRight())
+console.log(validInput, validInput.isLeft(), validInput.isRight())
