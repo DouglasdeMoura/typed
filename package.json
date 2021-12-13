@@ -1,0 +1,16 @@
+{
+  "name": "typed",
+  "version": "1.0.0",
+  "description": "poc",
+  "main": "src/index.ts",
+  "author": "Douglas Moura",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --require esbuild-register src/index.ts"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.3",
+    "esbuild-register": "^3.2.1"
+  }
+}
